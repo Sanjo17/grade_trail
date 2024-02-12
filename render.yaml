@@ -5,5 +5,5 @@ services:
     runtime: python
     plan: free
     autoDeploy: false
-    buildCommand: pip install -r requirements.txt
+    buildCommand: gunicorn main:app
     startCommand: python main.py
